@@ -1,0 +1,22 @@
+{
+  "name": "nightingaleknits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wooffet/nightingaleknits.git"
+  },
+  "author": "Wooffet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wooffet/nightingaleknits/issues"
+  },
+  "homepage": "https://github.com/wooffet/nightingaleknits#readme",
+  "dependencies": {
+    "firebase": "^9.6.2"
+  }
+}
