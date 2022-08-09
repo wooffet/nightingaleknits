@@ -1,4 +1,8 @@
-<main class="px-8 py-16">
+<script>
+	import AsideLinks from '$lib/components/AsideLinks.svelte';
+</script>
+
+<main class="bg-gray-400 px-8 py-16">
 	<section class="max-w-xl mb-16 text-slate-600">
 		<article>
 			<h2 class="text-5xl lowercase">hi, I'm sam 🐦</h2>
@@ -18,5 +22,5 @@
 			<p class="text-lg">this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus</p>
 		</article>
 	</section>
-	<aside>side content e.g. links (aside tag)</aside>
+	<AsideLinks />
 </main>

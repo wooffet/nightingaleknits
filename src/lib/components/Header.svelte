@@ -1,3 +1,9 @@
+<script>
+	const openShopTab = () => {
+		window.open('https://www.etsy.com/uk/shop/NightingaleKnitsGB', '_blank');
+	};
+</script>
+
 <header class="text-white bg-[url('/header-bg.jpg')]" style="background-size: cover">
 	<div class="px-8 py-16 bg-gradient-to-r from-black">
 		<div class="max-w-lg grid grid-cols-1 gap-8">
@@ -6,9 +12,13 @@
 			<p class="text-lg lowercase">Est. 2020 | Sam nightingale🐦 | indie yarn dyer</p>
 			<nav>
 				<button
-					class="bg-gradient-to-r from-red-500 to-rose-500 px-6 py-3 text-lg rounded-md lowercase"
+					class="btn btn-lg bg-gradient-to-r from-red-500 to-rose-500 text-lg lowercase"
+					on:click={openShopTab}
 				>
-					Visit my shop
+					<img
+						src="https://img.icons8.com/fluency-systems-filled/48/000000/shopping-bag-full.png"
+						alt="shopping bag icon"
+					/> Visit my shop
 				</button>
 			</nav>
 		</div>
