@@ -1,25 +1,31 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header class='text-white bg-[url("/header-bg.jpg")]' style='background-size: cover'>
+    <nav>
+        <HeaderLink href='/'>Home</HeaderLink>
+        <HeaderLink href='https://www.etsy.com/uk/shop/NightingaleKnitsGB' target='_blank'>Shop</HeaderLink>
+        <HeaderLink href='/blog'>Blog</HeaderLink>
+        <HeaderLink href='/about'>About</HeaderLink>
+    </nav>
+    <div class='px-8 py-16 bg-gradient-to-r from-black'>
+        <div class='max-w-lg grid grid-cols-1 gap-8'>
+            <h2 class='text-xl font-bold lowercase'>uniquely crafted hand-dyed yarn</h2>
+            <h1 class='text-6xl font-bold'>Nightingale Knits</h1>
+            <p class='text-lg lowercase'>Est. 2020 | Sam nightingale🐦 | indie yarn dyer</p>
+            <nav>
+                <a
+                    class='btn btn-lg bg-gradient-to-r from-red-500 to-rose-500 text-lg lowercase'
+                    href='https://www.etsy.com/uk/shop/NightingaleKnitsGB'
+                    target='_blank'
+                >
+                    <img
+                        src='https://img.icons8.com/fluency-systems-filled/48/000000/shopping-bag-full.png'
+                        alt='shopping bag icon'
+                    /> Visit my shop
+                </a>
+            </nav>
+        </div>
+    </div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
