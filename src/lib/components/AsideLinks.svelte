@@ -1,4 +1,4 @@
-<aside class="menu w-24 bg-zinc-500 p-2 rounded-box">
+<aside class="menu w-24 bg-zinc-500 p-2 rounded-box place-self-center">
 	<ul>
 		<li>
 			<a href="https://www.etsy.com/uk/shop/NightingaleKnitsGB" target="_blank"

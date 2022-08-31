@@ -12,15 +12,19 @@
 			</p>
 		</article>
 	</section>
-	<section class="border-2 border-red-500 max-w-xl mb-8 grid grid-cols-2 gap-4 text-slate-600">
-		<article class="border-2 border-green-500">
+	<section class="mb-8 grid grid-cols-3 gap-4 text-slate-600">
+		<article>
 			<h3 class="text-2xl font-bold mb-2 lowercase">another section with smaller info</h3>
-			<p class="text-lg">this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus</p>
+			<p class="text-lg max-w-prose">
+				this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus
+			</p>
 		</article>
-		<article class="border-2 border-purple-500">
+		<article>
 			<h3 class="text-2xl font-bold mb-2 lowercase">another section with smaller info</h3>
-			<p class="text-lg">this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus</p>
+			<p class="text-lg max-w-prose">
+				this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus
+			</p>
 		</article>
+		<AsideLinks />
 	</section>
-	<AsideLinks />
 </main>
