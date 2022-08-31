@@ -12,24 +12,55 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
     </head>
     <body>
         <Header />
-        <main class='bg-gray-400 px-8 py-16'>
-            <section class='max-w-xl mb-16 text-slate-600'>
-                <article>
-                    <h2 class='text-5xl lowercase'>hi, I'm sam 🐦</h2>
+        <main class='bg-sky-100 px-8 py-16 flex flex-col items-center text-slate-700 lowercase'>
+            <section class='max-w-3xl mb-16'>
+                <article class='flex flex-col'>
+                    <h2 class='text-5xl place-self-center'>welcome! 🐦</h2>
                     <p class='text-2xl'>
-                        some intro sentence that has the right kind of cutesy enthusiam about myself + my business ;) lol
+                        hi, I'm sam! nightingale knits has been crafting hand-dyed yarn since 2020, ensuring each colourway
+                        produced is unique and meets my high standards! Every order is packed promptly with care and includes
+                        a hand written thank you note before being sent on it's way to you :)
                     </p>
                 </article>
             </section>
-            <section class='mb-8 grid grid-cols-3 gap-4 text-slate-600'>
-                <article>
-                    <h3 class='text-2xl font-bold mb-2 lowercase'>another section with smaller info</h3>
-                    <p class='text-lg max-w-prose'>this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus</p>
-                </article>
-                <article>
-                    <h3 class='text-2xl font-bold mb-2 lowercase'>another section with smaller info</h3>
-                    <p class='text-lg max-w-prose'>this is the smaller info lorem ipsum bacon arcanum adeptus mechanicus</p>
-                </article>
+            <div class='divider'></div>
+            <section class='flex flex-col items-center mb-8 gap-4 text-slate-600'>
+                <h2 class='text-5xl place-self-center'>latest blog posts</h2>
+                <div class='flex flex-row items-stretch gap-4'>
+                    <article class='card card-bordered mt-4 bg-amber-50 shadow-xl image-full lowercase'>
+                        <div class='card-body'>
+                            <figure>
+                                <img
+                                    src='https://images.unsplash.com/photo-1472898965229-f9b06b9c9bbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
+                                />
+                            </figure>
+                            <h3 class='card-title place-self-center'>a blog post card!</h3>
+                            <p class='text-lg max-w-prose'>this is where the preview of the blog post will go :)</p>
+                        </div>
+                    </article>
+                    <article class='card card-bordered mt-4 bg-amber-50 shadow-xl lowercase'>
+                        <div class='card-body'>
+                            <figure class='place-self-center'>
+                                <img
+                                    src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png'
+                                />
+                            </figure>
+                            <h3 class='card-title place-self-center'>a blog post card!</h3>
+                            <p class='text-lg max-w-prose'>this is where the preview of the blog post will go :)</p>
+                        </div>
+                    </article>
+                    <article class='card card-bordered mt-4 bg-amber-50 shadow-xl lowercase'>
+                        <div class='card-body'>
+                            <figure class='place-self-center'>
+                                <img
+                                    src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png'
+                                />
+                            </figure>
+                            <h3 class='card-title place-self-center'>a blog post card!</h3>
+                            <p class='text-lg max-w-prose'>this is where the preview of the blog post will go :)</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
         <Footer />
