@@ -12,7 +12,7 @@ const posts = (await Astro.glob('../pages/blog/*.{md,mdx}'))
             posts.map((p) => (
                 <a href={p.url}>
                     <article class='mt-4'>
-                        <div class='card w-96 bg-amber-50 shadow-xl lowercase'>
+                        <div class='card w-96 bg-sky-100 shadow-xl lowercase'>
                             <figure>
                                 {p.frontmatter.heroImage && <img src={p.frontmatter.heroImage} />}
                                 {!p.frontmatter.heroImage && (
