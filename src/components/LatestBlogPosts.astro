@@ -10,20 +10,22 @@ const posts = (await Astro.glob('../pages/blog/*.{md,mdx}'))
     <div class='flex flex-row items-stretch gap-4'>
         {
             posts.map((p) => (
-                <article class='card card-bordered mt-4 bg-amber-50 shadow-xl lowercase'>
-                    <a href={p.url}>
-                        <div class='card-body'>
+                <a href={p.url}>
+                    <article class='mt-4'>
+                        <div class='card w-96 bg-amber-50 shadow-xl lowercase'>
                             <figure>
                                 {p.frontmatter.heroImage && <img src={p.frontmatter.heroImage} />}
                                 {!p.frontmatter.heroImage && (
                                     <img src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png' />
                                 )}
                             </figure>
-                            <h3 class='card-title place-self-center'>{p.frontmatter.title}</h3>
-                            <p class='text-lg max-w-prose'>{p.frontmatter.description}</p>
+                            <div class='card-body'>
+                                <h3 class='card-title place-self-center'>{p.frontmatter.title}</h3>
+                                <p class='text-lg max-w-prose'>{p.frontmatter.description}</p>
+                            </div>
                         </div>
-                    </a>
-                </article>
+                    </article>
+                </a>
             ))
         }
     </div>
