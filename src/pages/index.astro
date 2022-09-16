@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import LatestBlogPosts from '../components/LatestBlogPosts.astro';
+---
+
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <main class='bg-amber-50 px-8 py-16 flex flex-col items-center text-slate-700 lowercase'>
+            <section class='max-w-3xl mb-16'>
+                <article class='flex flex-col'>
+                    <h2 class='text-5xl place-self-center'>welcome! 🐦</h2>
+                    <p class='text-2xl'>
+                        hi, we're sammy and chris! nightingale knits has been crafting hand-dyed yarn since 2020, ensuring each colourway
+                        produced is unique and meets our high standards! Every order is packed promptly with care and includes
+                        a hand written thank you note before being sent on it's way to you :)
+                    </p>
+                </article>
+            </section>
+            <div class='divider'></div>
+        </main>
+        <Footer />
+    </body>
+</html>

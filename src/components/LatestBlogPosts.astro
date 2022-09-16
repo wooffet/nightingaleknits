@@ -1,0 +1,32 @@
+---
+// Use Astro.glob() to fetch all posts, then sort them by date, then take 3.
+const posts = (await Astro.glob('../pages/blog/*.{md,mdx}'))
+    .sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
+    .slice(0, 3);
+---
+
+<section class='flex flex-col items-center mb-8 gap-4 text-slate-600'>
+    <h2 class='text-5xl place-self-center'>latest blog posts</h2>
+    <div class='flex flex-row items-stretch gap-4'>
+        {
+            posts.map((p) => (
+                <a href={p.url}>
+                    <article class='mt-4'>
+                        <div class='card w-96 bg-sky-100 shadow-xl lowercase'>
+                            <figure>
+                                {p.frontmatter.heroImage && <img src={p.frontmatter.heroImage} />}
+                                {!p.frontmatter.heroImage && (
+                                    <img src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png' />
+                                )}
+                            </figure>
+                            <div class='card-body'>
+                                <h3 class='card-title place-self-center'>{p.frontmatter.title}</h3>
+                                <p class='text-lg max-w-prose'>{p.frontmatter.description}</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            ))
+        }
+    </div>
+</section>

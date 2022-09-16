@@ -1,0 +1,4 @@
+@import '@fontsource/poppins/300.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,125 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header class='text-white hero' style='background-image: url("/header-bg.webp"); background-size: cover'>
+    <div class='hero-overlay bg-gradient-to-r from-black'>
+        <div class='bg-transparent rounded-box'>
+            <nav class='navbar px-8 lowercase'>
+                <div class='flex-1'>
+                    <ul class='menu menu-horizontal p-0 gap-4'>
+                        <li>
+                            <HeaderLink href='/'>Home</HeaderLink>
+                        </li>
+                    </ul>
+                </div>
+                <div class='flex-none'>
+                    <ul class='menu menu-horizontal p-0 gap-4'>
+                        <li>
+                            <HeaderLink href='https://www.etsy.com/uk/shop/NightingaleKnitsGB' target='_blank'
+                                >Shop</HeaderLink
+                            >
+                        </li>
+                        <li>
+                            <div
+                                class='w-32 p-0 dropdown dropdown-end flex items-stretch hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                            >
+                                <label
+                                    tabindex='0'
+                                    class='w-32 btn btn-ghost rounded-btn lowercase hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                >
+                                    links
+                                    <svg
+                                        class='fill-current'
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        width='20'
+                                        height='20'
+                                        viewBox='0 0 24 24'
+                                        ><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z'></path>
+                                    </svg>
+                                </label>
+                                <ul
+                                    tabindex='0'
+                                    class='flex items-stretch inset-x-0 top-12 mt-1 dropdown-content menu rounded-box w-32 bg-amber-50 shadow'
+                                >
+                                    <li class='m-0 p-0 hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'>
+                                        <a
+                                            class='block m-auto p-auto rounded-box hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                            href='https://www.etsy.com/uk/shop/NightingaleKnitsGB'
+                                            target='_blank'
+                                            ><img
+                                                src='https://img.icons8.com/fluency-systems-filled/48/000000/shopping-bag-full.png'
+                                                alt='shopping bag icon'
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class='m-0 p-0 hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'>
+                                        <a
+                                            class='block m-auto p-auto rounded-box hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                            href='https://instagram.com/nightingale.knits'
+                                            target='_blank'
+                                            ><img
+                                                src='https://img.icons8.com/fluency-systems-filled/48/000000/instagram-new.png'
+                                                alt='instagram icon'
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class='m-0 p-0 hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'>
+                                        <a
+                                            class='block m-auto p-auto rounded-box hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                            href='https://www.facebook.com/nightingaleknitsgb/'
+                                            target='_blank'
+                                            ><img
+                                                src='https://img.icons8.com/fluency-systems-filled/48/000000/facebook-new.png'
+                                                alt='facebook icon'
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class='m-0 p-0 hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'>
+                                        <a
+                                            class='block m-auto p-auto rounded-box hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                            href='https://twitter.com/nightingaleknts'
+                                            target='_blank'
+                                            ><img
+                                                src='https://img.icons8.com/fluency-systems-filled/48/000000/twitter.png'
+                                                alt='twitter icon'
+                                            />
+                                        </a>
+                                    </li>
+                                    <li class='m-0 p-0 hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'>
+                                        <a
+                                            class='block m-auto p-auto rounded-box hover:bg-gradient-to-r hover:from-red-500 hover:to-rose-500'
+                                            href='mailto:sammy@nightingaleknits.com'
+                                            target='_blank'
+                                            ><img
+                                                src='https://img.icons8.com/fluency-systems-filled/48/000000/new-post.png'
+                                                alt='email icon'
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class='hero-content flex-col lg:flex-row text-left px-8 py-16 max-w-xl grid grid-cols-1 gap-8'>
+        <h2 class='text-xl font-bold lowercase'>uniquely crafted hand-dyed yarn</h2>
+        <h1 class='text-6xl font-bold'>Nightingale Knits</h1>
+        <p class='text-lg lowercase'>Est. 2020 | the nightingales 🐦 | indie yarn dyer</p>
+        <div>
+            <a
+                class='btn btn-lg bg-gradient-to-r from-red-500 to-rose-500 text-lg text-white lowercase'
+                href='https://www.etsy.com/uk/shop/NightingaleKnitsGB'
+                target='_blank'
+            >
+                <img
+                    src='https://img.icons8.com/fluency-systems-filled/48/000000/shopping-bag-full.png'
+                    alt='shopping bag icon'
+                /> Visit my shop
+            </a>
+        </div>
+    </div>
+</header>
