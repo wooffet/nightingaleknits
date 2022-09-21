@@ -1,4 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 // Use Astro.glob() to fetch all posts, then sort them by date, then take 3.
 const posts = (await Astro.glob('../pages/blog/*.{md,mdx}'))
     .sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
@@ -14,9 +16,15 @@ const posts = (await Astro.glob('../pages/blog/*.{md,mdx}'))
                     <article class='mt-4'>
                         <div class='card w-96 bg-sky-100 shadow-xl lowercase'>
                             <figure>
-                                {p.frontmatter.heroImage && <img src={p.frontmatter.heroImage} />}
+                                {p.frontmatter.heroImage && <Image src={p.frontmatter.heroImage} format='webp' />}
                                 {!p.frontmatter.heroImage && (
-                                    <img src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png' />
+                                    <Image
+                                        src='https://img.icons8.com/fluency-systems-filled/48/000000/typewriter-with-paper.png'
+                                        alt='blog post icon'
+                                        width={48}
+                                        height={48}
+                                        format='webp'
+                                    />
                                 )}
                             </figure>
                             <div class='card-body'>
